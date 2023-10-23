@@ -1,0 +1,153 @@
+/* --- Global --- */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ h1{
+
+    font-size: 32px;
+}
+
+/* ---  Navbar & Hero section start --- */
+.navbar{
+    
+  width: 100%;
+  padding-top: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+} 
+
+.hero-section{
+    background-image:url("./images/bgk-header.png") ;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-section-text-box{
+    max-width: 780px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.hero-section-text-box h1{
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.hero-section-text-box h1:after
+
+.hero-section-text-box p{
+    font-size: 16px;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+}
+
+.logo-text{
+    font-size: 30px;
+    color: #00e0d0;
+    text-transform:lowercase ;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.project-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.navbar-wrapper{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar-wrapper ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-wrapper li{
+    list-style: none;
+    padding: 0 15px;
+}
+
+.navbar-wrapper a{
+   color:#fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 13px;
+   transition: all .5s ease-out;
+}
+
+.navbar-wrapper a:hover{
+    color: #00e0d0;
+ }
+
+
+ /* ---  Main section start --- */
+
+  /* ---  our-story-section start --- */
+   /* ---  our-story-section end --- */
+
+ /* ---  our-watch-section start --- */
+  /* ---  our-watch-section end --- */
+
+
+/* ---  our-expertise-section start --- */
+/* ---  our-expertise-section end --- */
+
+  /* ---  our-team-section start --- */
+  /* ---  our-team-section end --- */
+
+/* ---  our-contact-client-section start --- */
+/* ---  our-contact-client-section end --- */
+
+
+ /* ---  Main section end --- */
+
+
+
+
+
+ /* --- Footer-start --- */
+ 
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+.submit-button {
+    background-color: white;
+    color: aqua;
+    padding: 10px 20px;
+    border-style: solid;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: burlywood;
+    transform: 1.3em;
+}
+
+ /* --- Footer-end --- */
