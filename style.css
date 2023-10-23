@@ -169,5 +169,55 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
 }
+.col-footer {
+   flex-basis: 25%;
+   padding: 10px; 
+}
+.footer-logo{
+    width: 50px;
+    margin-bottom: 30px;
+}
+.studio {
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #fff;
+    margin-bottom: 50px;
+
+}
+.form-footer {
+    width: 250px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: hwb(320 97% 2%);
+
+    
+}
+.send-button {
+background: transparent;
+border: 0;
+cursor: pointer;
+color: rgb(190, 120, 120);
+
+
+}
+.form-input {
+   background: transparent;
+   border-style: solid;
+   border-color: white; 
+  padding: 15px 30px;
+ 
+}
+
+
 
  /* --- Footer-end --- */
