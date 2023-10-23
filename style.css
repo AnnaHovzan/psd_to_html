@@ -149,5 +149,16 @@ label {
     background-color: burlywood;
     transform: 1.3em;
 }
+footer {
+    width: 100%;
+    position: absolute;
+    background-image:url(./bgk-footer.png);
+    color: white;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    
+    
+}
 
  /* --- Footer-end --- */
