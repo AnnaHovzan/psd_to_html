@@ -156,9 +156,18 @@ footer {
     color: white;
     padding: 100px 0 30px;
     font-size: 13px;
-    line-height: 20px;
+    line-height: 20px; 
     
     
+}
+
+.row-footer {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
  /* --- Footer-end --- */
