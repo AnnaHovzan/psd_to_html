@@ -227,7 +227,8 @@ color: rgb(190, 120, 120);
     left: .5rem;
     background: white;
     padding: 14px 10px;
-    transition: 1.0s;
+    
+    opacity: 30%;
     
     
     
@@ -251,8 +252,8 @@ color: rgb(190, 120, 120);
     left: 5.5rem;
 }
 .paper-button:hover {
-    transform: scale(1.4);
-    background: transparent;
+    transform: scale(1.2);
+    background: white
     color: white;
 }
 
