@@ -172,6 +172,9 @@ footer {
 .col-footer {
    flex-basis: 25%;
    padding: 10px; 
+   position: relative;
+   left: 14rem;
+      
 }
 .footer-logo{
     width: 50px;
@@ -181,6 +184,7 @@ footer {
     width: fit-content;
     margin-bottom: 30px;
     position: relative;
+    
     
 }
 
@@ -215,9 +219,41 @@ color: rgb(190, 120, 120);
    border-style: solid;
    border-color: white; 
   padding: 15px 30px;
+  color: white;
  
 }
+.paper-button {
+    position: relative;
+    left: .5rem;
+    background: white;
+    padding: 14px 10px;
+    transition: 1.0s;
+    
+    
+    
+}
+.logo-text-footer {
+    font-size: 30px;
+    color: #00e0d0;
+    text-transform:lowercase ;
+    display: inline-block;
+    position: relative;
+    top: -2.5rem;
+}
 
+.paragraph-logo{
+    position: relative;
+    top: -2.5rem;
+}
 
+.h3-stay{
+    position: relative;
+    left: 5.5rem;
+}
+.paper-button:hover {
+    transform: scale(1.4);
+    background: transparent;
+    color: white;
+}
 
  /* --- Footer-end --- */
