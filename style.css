@@ -129,10 +129,69 @@ h1 {
 
 
 /* ---  our-expertise-section start --- */
+.expertise-section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    margin-bottom: 1rem;
+}
+
+.expertise-section > .expertise-head {
+    padding: 1rem;
+}
+
+.expertise-head > h2 {
+    padding-bottom: 0.5rem;
+}
+
+.expertise-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1px;
+    background-color: rgb(237, 224, 239);
+    margin-top: 1.5rem;
+}
+
+@media screen and (min-width:720px) {
+    .expertise-block {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
+    
+ }
+
+
+.expertise-block > * {
+    background-color: white;
+    padding: 1rem;
+    align-content: center;
+}
+
+.block-web,
+.block-branding,
+.block-mobil,
+.block-search-engine,
+.block-game_development,
+.block-made_with_love {
+    display: grid;
+    gap: 1rem;
+}
+
+
 /* ---  our-expertise-section end --- */
 
-/* ---  our-team-section start --- */
-/* ---  our-team-section end --- */
+
+
+
+/* ---  our-expertise-section end --- */
+
+  
 
 /* ---  our-contact-client-section start --- */
 /* ---  our-contact-client-section end --- */
