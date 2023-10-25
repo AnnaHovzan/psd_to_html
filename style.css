@@ -184,6 +184,7 @@ footer {
     width: fit-content;
     margin-bottom: 30px;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
     
     
 }
@@ -256,5 +257,30 @@ color: rgb(190, 120, 120);
     background: white
     color: white;
 }
+.social-icons {
+    position: relative;
+    left: 80px;
+    top: -2.8rem;
+}
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+}
+.address {
+    font-size: 16px;
+    display: flex;
+    word-spacing: .1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+.phone {
+    margin-right: 10px;
+    font-size: 20px;
+    
 
+}
  /* --- Footer-end --- */
