@@ -116,6 +116,22 @@
   /* ---  our-team-section end --- */
 
 /* ---  our-contact-client-section start --- */
+/* CSS */
+.brand-container .contact-client-img  {
+    display: grid;
+    grid-template-columns: 12% 12%;
+    margin: 1rem;
+    position: relative;
+    left: 70rem;
+}
+
+
+.happy-client {
+    position: relative;
+    left: 70rem;
+    padding: 10px;
+}
+/* ---  our-contact-client-section end --- */
 
 
 
@@ -123,10 +139,14 @@
 .contact-form {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
-    
+    padding: 30px;
+    align-items: safe;
     opacity: 60%;
     background-color: transparent;
+    display: block;
+    position: relative;
+    left: -10rem;
+    top: 25rem;
 }
 
 .contact-form label {
@@ -155,13 +175,14 @@
 }
 
 .contact-form button.submit-button:hover {
-    background-color: transparent
+    background-color: green;
+
 }
 
 
 /*form section end */
 
-/* ---  our-contact-client-section end --- */
+
 
 
  /* ---  Main section end --- */
@@ -224,6 +245,8 @@ footer {
 .footer-logo{
     width: 50px;
     margin-bottom: 30px;
+    position: relative;
+    bottom: 20px;
 }
 .studio {
     width: fit-content;
@@ -285,7 +308,7 @@ color: rgb(190, 120, 120);
     text-transform:lowercase ;
     display: inline-block;
     position: relative;
-    top: -2.5rem;
+    top: -4rem;
 }
 
 .paragraph-logo{
