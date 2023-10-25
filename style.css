@@ -1,132 +1,151 @@
 /* --- Global --- */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
- h1{
+h1 {
 
     font-size: 32px;
 }
 
 /* ---  Navbar & Hero section start --- */
-.navbar{
-    
-  width: 100%;
-  padding-top: 20px;
-  position: fixed;
-  left: 0;
-  right: 0;
-} 
+.navbar {
+    background-color: #403167;
+    width: 100%;
+    padding: 20px 0 15px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
 
-.hero-section{
-    background-image:url("./images/bgk-header.png") ;
+.hero-section {
+    background-image: url("./images/bgk-header.png");
     height: 80vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-section-text-box{
-    max-width: 780px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.hero-section-text-box {
+    max-width: 750px;
     color: #fff;
     text-align: center;
 }
 
-.hero-section-text-box h1{
-    margin-bottom: 30px;
+.hero-section-text-box h1 {
+    margin-bottom: 60px;
     text-transform: capitalize;
     position: relative;
 }
 
-.hero-section-text-box h1:after
-
-.hero-section-text-box p{
-    font-size: 16px;
+.hero-section-text-box h1:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    width: 45px;
+    height: 1px;
+    background-color: #00e0d0;
 }
 
-.logo a{
+.hero-section-text-box p {
+    font-size: 16px;
+
+}
+
+.logo a {
     display: flex;
     align-items: center;
 }
 
-.logo-text{
+.logo-text {
     font-size: 30px;
     color: #00e0d0;
-    text-transform:lowercase ;
+    text-transform: lowercase;
     display: inline-block;
     margin-left: 10px;
 }
 
-.project-wrapper{
+.project-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     height: 100%;
 }
 
-.navbar-wrapper{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar-wrapper ul{
+.navbar-wrapper ul {
     display: flex;
     justify-content: space-between;
 }
 
-.navbar-wrapper li{
+.navbar-wrapper li {
     list-style: none;
     padding: 0 15px;
 }
 
-.navbar-wrapper a{
-   color:#fff;
-   text-decoration: none;
-   text-transform: uppercase;
-   font-size: 13px;
-   transition: all .5s ease-out;
+.navbar-wrapper a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: all .5s ease-out;
 }
 
-.navbar-wrapper a:hover{
+.navbar-wrapper a:hover {
     color: #00e0d0;
- }
+}
+
+.hero-section-text-box button {
+    padding: 15px;
+    margin-top: 40px;
+    background-color: transparent;
+    color: #00e0d0;
+    border: 1px solid #00e0d0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
 
- /* ---  Main section start --- */
+/* ---  Main section start --- */
 
-  /* ---  our-story-section start --- */
-   /* ---  our-story-section end --- */
+/* ---  our-story-section start --- */
+/* ---  our-story-section end --- */
 
- /* ---  our-watch-section start --- */
-  /* ---  our-watch-section end --- */
+/* ---  our-watch-section start --- */
+/* ---  our-watch-section end --- */
 
 
 /* ---  our-expertise-section start --- */
 /* ---  our-expertise-section end --- */
 
-  /* ---  our-team-section start --- */
-  /* ---  our-team-section end --- */
+/* ---  our-team-section start --- */
+/* ---  our-team-section end --- */
 
 /* ---  our-contact-client-section start --- */
 /* ---  our-contact-client-section end --- */
 
 
- /* ---  Main section end --- */
+/* ---  Main section end --- */
 
 
 
 
 
- /* --- Footer-start --- */
- 
+/* --- Footer-start --- */
+
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -134,10 +153,12 @@ form {
     padding: 20px;
     border-radius: 5px;
 }
+
 label {
     display: block;
     margin-bottom: 10px;
 }
+
 .submit-button {
     background-color: white;
     color: aqua;
@@ -145,9 +166,10 @@ label {
     border-style: solid;
     cursor: pointer;
 }
-.submit-button:hover{
+
+.submit-button:hover {
     background-color: burlywood;
     transform: 1.3em;
 }
 
- /* --- Footer-end --- */
+/* --- Footer-end --- */
