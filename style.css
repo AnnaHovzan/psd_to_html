@@ -116,6 +116,51 @@
   /* ---  our-team-section end --- */
 
 /* ---  our-contact-client-section start --- */
+
+
+
+/*form section start */
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    opacity: 60%;
+    background-color: transparent;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    
+}
+
+.contact-form button.submit-button {
+    background-color: transparent;
+    color: #1dd1c8;
+    border-style: solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-color: #1dd1c8;
+    
+}
+
+.contact-form button.submit-button:hover {
+    background-color: transparent
+}
+
+
+/*form section end */
+
 /* ---  our-contact-client-section end --- */
 
 
