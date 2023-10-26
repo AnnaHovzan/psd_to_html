@@ -106,7 +106,7 @@ h1 {
 
 .navbar-wrapper a:hover {
     color: #00e0d0;
-}
+ }
 
 .hero-section-text-box button {
     padding: 15px;
@@ -318,7 +318,90 @@ h1 {
   
 
 /* ---  our-contact-client-section start --- */
+/* CSS */
+.brand-container .contact-client-img  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    left: 0px;
+    grid-template-rows: repeat(5,auto);
+    
+}
+.brand-container .contact-client-img img{
+    height: 80px;
+    width: 120px;
+    object-fit: contain;
+    display: inline-block;
+    margin-bottom: 14px;
+    width: 40%;
+}
+
+.happy-client {
+    position: relative;
+    left: 0rem;
+    
+  
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
 /* ---  our-contact-client-section end --- */
+
+
+
+/*form section start */
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: safe;
+    opacity: 60%;
+    background-color: transparent;
+    display: block;
+    padding: 0;
+    
+    
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    
+}
+
+.contact-form button.submit-button {
+    background-color: transparent;
+    color: #1dd1c8;
+    border-style: solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-color: #1dd1c8;
+    
+}
+
+.contact-form button.submit-button:hover {
+    background-color: green;
+
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+/*form section end */
+
+
 
 
 /* ---  Main section end --- */
@@ -354,5 +437,144 @@ label {
     background-color: burlywood;
     transform: 1.3em;
 }
+footer {
+    width: 100%;
+    position: absolute;
+    background-image:url(./bgk-footer.png);
+    color: white;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px; 
+    
+    
+    
+}
 
-/* --- Footer-end --- */
+.row-footer {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col-footer {
+   flex-basis: 25%;
+   padding: 10px; 
+   
+
+      
+}
+.footer-logo{
+    width: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 20px;
+}
+.studio {
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #fff;
+    margin-bottom: 50px;
+    
+
+}
+.form-footer {
+    width: 250px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: hwb(320 74% 22%);
+
+    
+}
+.send-button {
+background: transparent;
+border: 0;
+cursor: pointer;
+color: rgb(190, 120, 120);
+
+
+}
+.form-input {
+   background: transparent;
+   border-style: solid;
+   border-color: rgb(180, 176, 176); 
+   opacity: 40%;
+  padding: 15px 30px;
+  color: rgb(141, 135, 135);
+ 
+}
+.paper-button {
+    position: relative;
+    left: .5rem;
+    background: white;
+    padding: 14px 10px;
+    
+    opacity: 30%;
+    
+    
+    
+}
+.logo-text-footer {
+    font-size: 30px;
+    color: #00e0d0;
+    text-transform:lowercase ;
+    display: inline-block;
+    position: relative;
+    top: -4rem;
+}
+
+.paragraph-logo{
+    position: relative;
+    top: -2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h3-stay{
+    position: relative;
+    left: 5.5rem;
+}
+.paper-button:hover {
+    transform: scale(1.2);
+    background: white
+    color: white;
+}
+.social-icons {
+    position: relative;
+    left: 80px;
+    top: -2.8rem;
+}
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+}
+.address {
+    font-size: 16px;
+    display: flex;
+    word-spacing: .1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+.phone {
+    margin-right: 10px;
+    font-size: 20px;
+    
+
+}
+ /* --- Footer-end --- */
