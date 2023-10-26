@@ -17,13 +17,14 @@ h1 {
     width: 100%;
     padding: 20px 0 15px 0;
     position: fixed;
+    z-index: 3;
     left: 0;
     right: 0;
 }
 
 .hero-section {
     background-image: url("./images/bgk-header.png");
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -108,7 +109,8 @@ h1 {
     color: #00e0d0;
 }
 
-.hero-section-text-box button {
+.hero-section-text-box button,
+.our-story-button {
     padding: 15px;
     margin-top: 40px;
     background-color: transparent;
@@ -122,9 +124,79 @@ h1 {
 /* ---  Main section start --- */
 
 /* ---  our-story-section start --- */
+
+.our-story-section {
+    padding: 120px 0;
+}
+
+
+.our-story-section-wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.our-story-text-head {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.our-story-img {
+    height: 317px;
+    width: 317px;
+}
+
+.our-story-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.our-story-text-paragraph {
+    font-size: 18px;
+}
+
+.our-story-text-paragraph+.our-story-text-paragraph {
+    margin: 30px 0 0 0;
+}
+
 /* ---  our-story-section end --- */
 
 /* ---  our-watch-section start --- */
+
+.baground-img {
+    background-image: url('./images/bgk-middle.png');
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.watch-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.watch-section_icon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-section_icon p {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
 /* ---  our-watch-section end --- */
 
 
@@ -141,11 +213,11 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.expertise-section > .expertise-head {
+.expertise-section>.expertise-head {
     padding: 1rem;
 }
 
-.expertise-head > h2 {
+.expertise-head>h2 {
     padding-bottom: 0.5rem;
 }
 
@@ -160,14 +232,14 @@ h1 {
 
 @media screen and (min-width:720px) {
     .expertise-block {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
-    
- }
+
+}
 
 
-.expertise-block > * {
+.expertise-block>* {
     background-color: white;
     padding: 1rem;
     align-content: center;
@@ -186,8 +258,8 @@ h1 {
 /* ---  our-expertise-section end --- */
 
 /* ---  our-team-section start --- */
-  /* ---  our-team-section end --- */
-  
+/* ---  our-team-section end --- */
+
 
 /* ---  our-contact-client-section start --- */
 /* ---  our-contact-client-section end --- */
