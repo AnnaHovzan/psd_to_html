@@ -167,7 +167,7 @@ transition: all .3s ease-out;
   color: #00e0d0;
 }
 
-button {
+.hero-section button {
   padding: 15px;
   margin-top: 40px;
   background-color: transparent;
@@ -178,7 +178,25 @@ button {
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
-button:hover {
+
+.hero-section button:hover {
+  background-color: #00e0d0;
+  color: #403167;
+}
+
+.our-story-section button {
+  padding: 15px;
+  margin-top: 40px;
+  background-color: transparent;
+  color: #00e0d0;
+  border: 1px solid #00e0d0;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.our-story-section button:hover {
   background-color: #00e0d0;
   color: #403167;
 }
@@ -336,7 +354,7 @@ button:hover {
   justify-items: center;
   align-items: center;
   text-align: center;
-  align-content: center;
+  /* align-content: center; */
   padding: 2rem;
   padding-left: 15vw;
   padding-right: 15vw;
@@ -345,6 +363,7 @@ button:hover {
   background-image: url(images/bgk-header.png);
   background-size: cover;
 }
+
 
 .team-section-head h2 {
   margin-bottom: 20px;
@@ -374,10 +393,10 @@ button:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-  justify-content: space-between;
-  align-content: space-between;
+  /* justify-content: space-between;
+  align-content: space-between; */
 }
 
 .team-section-member {
@@ -401,6 +420,12 @@ button:hover {
   background-color: #fff;
 }
 
+@media screen and (min-width: 720px) {
+  .team-section-member-img {
+    min-height: 22vw;
+  }
+}
+
 .team-section-member-name {
   padding: 0.5rem;
   min-height: 5vh;
@@ -421,24 +446,24 @@ button:hover {
   gap: 1rem;
 }
 
-.team-section-hiring-button {
-  width: 40%;
-  height: 20%;
-  margin: 0 auto;
-  color: rgb(0, 224, 208);
-  border: #00e0d0 solid 2px;
-  border-radius: 3px;
-  padding: 0.5rem;
-  background-color: transparent;
+.team-section-hiring button {
+    display: block;
+   width: 10rem;
+   height: 20%;
+   margin: 0 auto;
+   padding: 15px;
+   background-color: transparent;
+   color: rgb(0, 224, 208);
+   border: 1px solid #00e0d0;
+   cursor: pointer;
+   transition: all 0.5s ease-out;
 }
 
-.team-section-hiring-button * {
-  text-decoration: none;
-  color: rgb(0, 224, 208);
-  background-color: transparent;
-  text-transform: uppercase;
-  font-size: 14px;
+.team-section-hiring button:hover {
+    background-color: rgb(0, 224, 208);
+    color: #403167;
 }
+
 
 /* ---  our-team-section end --- */
 
@@ -446,10 +471,11 @@ button:hover {
 /* CSS */
 .brand-container .contact-client-img {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 150px 150px;
   position: relative;
   left: 0px;
   grid-template-rows: repeat(5, auto);
+  justify-content: space-around;
 }
 .brand-container .contact-client-img img {
   height: 80px;
@@ -457,17 +483,24 @@ button:hover {
   object-fit: contain;
   display: inline-block;
   margin-bottom: 14px;
-  width: 40%;
+  
 }
 
 .happy-client {
   position: relative;
   left: 0rem;
+  margin-bottom: 30px;
 }
 .form-container {
   display: flex;
   justify-content: center;
   width: 50%;
+}
+.contact-client-section {
+    padding: 120px 0px;
+}
+.brand-container{
+    width: 50%;
 }
 
 /* ---  our-contact-client-section end --- */
@@ -511,9 +544,23 @@ button:hover {
 }
 .main-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
+@media screen and (max-width: 720px) {
+  .main-container {
+  flex-direction: column;
+  justify-items: center;
+}
+  .form-container {
+    width: 100%;
+  }
+
+  .brand-container {
+    width: 100%;
+  }
+}
 /*form section end */
 
 /* ---  Main section end --- */
@@ -524,7 +571,7 @@ form {
   max-width: 400px;
   margin: 0 auto;
   background-color: white;
-  padding: 20px;
+  padding: 20px 0;
   border-radius: 5px;
 }
 
@@ -553,19 +600,22 @@ footer {
   padding: 100px 0 30px;
   font-size: 13px;
   line-height: 20px;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .row-footer {
-  width: 85%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+  
 }
 .col-footer {
-  flex-basis: 25%;
-  padding: 10px;
+  flex-basis: 33%;
+  
 }
 .footer-logo {
   width: 50px;
@@ -589,11 +639,12 @@ form {
   margin-bottom: 50px;
 }
 .form-footer {
-  width: 250px;
+  
   background: transparent;
   border: 0;
   outline: none;
   color: hwb(320 74% 22%);
+  
 }
 .send-button {
   background: transparent;
@@ -608,6 +659,7 @@ form {
   opacity: 40%;
   padding: 15px 30px;
   color: rgb(141, 135, 135);
+  width: 100%;
 }
 .paper-button {
   position: relative;
@@ -630,11 +682,12 @@ form {
   position: relative;
   top: -2.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  word-spacing: 0.1;
 }
 
 .h3-stay {
   position: relative;
-  left: 5.5rem;
+  
 }
 .paper-button:hover {
   transform: scale(1.2);
@@ -643,7 +696,6 @@ form {
 }
 .social-icons {
     position: relative;
-    left: 95px;
     top: -2.8rem;
 }
 .copyright {
@@ -654,7 +706,7 @@ form {
   font-size: 16px;
   display: flex;
   word-spacing: 0.1;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .icon {
   margin-right: 10px;
@@ -664,7 +716,47 @@ form {
   margin-right: 10px;
   font-size: 20px;
 }
+img:hover{
+    transform: scale(1.1);
+}
+.nav-bottom, ul {display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    
+    
+    
+    
+   
+}
+.nav-bottom, li{
+    margin: 10px;
+   
+   
+    
+}
+.nav-bottom, a{
+    color: white;
+    text-decoration: none;
+}
+.row-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
 /* --- Footer-end --- */
+
+@media (max-width:1170px) {
+    .col-footer{flex-basis: 50%;
+        padding: 0px 10px;
+    }
+    .col-footer:nth-child(3){flex-basis: 100%;
+    text-align: center;}
+    
+}
+
 
 @media (max-width: 991px) {
     .hero-section{
@@ -742,4 +834,8 @@ form {
     height: 550px;
     
   }
+  .col-footer{flex-basis: 100%;
+    padding: 0px 10px;
+    margin: 10px 0px;
+}
 }
