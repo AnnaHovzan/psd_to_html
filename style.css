@@ -607,7 +607,7 @@ color: rgb(190, 120, 120);
 .paragraph-logo{
     position: relative;
     top: -2.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .h3-stay{
@@ -621,7 +621,7 @@ color: rgb(190, 120, 120);
 }
 .social-icons {
     position: relative;
-    left: 80px;
+    left: 95px;
     top: -2.8rem;
 }
 .copyright {
@@ -644,5 +644,8 @@ color: rgb(190, 120, 120);
     font-size: 20px;
     
 
+}
+.social-icons, img:hover{
+ transform: scale(1.1);
 }
  /* --- Footer-end --- */
