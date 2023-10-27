@@ -4,6 +4,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -164,6 +167,8 @@ transition: all .3s ease-out;
 }
 
 .navbar-wrapper a:hover {
+  color: #00e0d0;
+}
   color: #00e0d0;
 }
 
@@ -653,6 +658,10 @@ form {
   color: rgb(190, 120, 120);
 }
 .form-input {
+  background: transparent;
+  border-style: solid;
+  border-color: rgb(180, 176, 176);
+  opacity: 40%;
   background: transparent;
   border-style: solid;
   border-color: rgb(180, 176, 176);
